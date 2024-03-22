@@ -57,4 +57,3 @@ for k in list:
     
     print(prtout)
     print("\n")
-    
