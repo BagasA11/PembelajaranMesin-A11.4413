@@ -1,15 +1,15 @@
 {
     "Senin": {
-      "produk_terjual": 4520,
-      "jumlah_penjualan": 452000000
+      "produk_terjual": 45,
+      "jumlah_penjualan": 452000
     },
     "Selasa": {
-      "produk_terjual": 3827,
-      "jumlah_penjualan": 382700000
+      "produk_terjual": 38,
+      "jumlah_penjualan": 382700
     },
     "Rabu": {
-      "produk_terjual": 1479,
-      "jumlah_penjualan": 147900000
+      "produk_terjual": 79,
+      "jumlah_penjualan": 147900
     },
     "Kamis": {
       "produk_terjual": 0,
