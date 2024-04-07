@@ -1,7 +1,7 @@
 import math
 
 def pangkat(n):
-    return lambda x: x^n
+    return lambda x: x**n
 
 def log2(n):
     return math.log2(n)
