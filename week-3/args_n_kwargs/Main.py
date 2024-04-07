@@ -48,6 +48,20 @@ def sortOperator(operator:list):
             operators.append(i)
     
     return operators
+
+def to_operator(list:str):
+    return [x for x in list if x in ["+", "-", "*", "x", ":", "/"]]
+
+def to_numberList(list:str):
+    return [int(x) for x in list if x in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]]
+
+def parse_input(input:str):
+    # clear input string from text character
+    input = str(filter(lambda x: x in ["+", "-", "*", "x", ":", "/", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]))
+    operator = to_operator(input)
+    nums = to_numberList(input)
+    
+    return nums, operator
     
 def negative(x):
     if not type(x) == int or type(x) == float:
