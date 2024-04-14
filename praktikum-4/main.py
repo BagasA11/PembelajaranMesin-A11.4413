@@ -72,8 +72,16 @@ new_df['Place of Publication'] = np.where(
 print(f"\n {new_df.head()}")
 print(f'type of df:\n {new_df.dtypes}')
 print(f"publisher: \n{new_df['Publisher'].tolist()[:10]}")
-print(f'\ndataset length: {len(new_df.loc[:])}')
-print(f'nan length: {new_df.isnull().sum().sum()}')
-# new_df.to_csv("clean.csv", index=False)
+print(f'\ndataset length: {len( new_df.index )}')
+print(f'nan count: \n{new_df.isna().sum()}\n')
+
+# drop rows with na
+new_df = new_df.dropna(axis=0, how="any")
+print(f'\ndataset length after rows dropped: {len(new_df)}')
+print(f'nan after dropped: \n{new_df.isna().sum()}\n')
+# print header
+print(f'\n sample:\n {new_df.head()}')
+
+new_df.to_csv("clean.csv", index=False)
 
 print()
